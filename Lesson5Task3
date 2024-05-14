@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Lesson5Task3 {
+    public static void main(String[] args) {
+        System.out.println("Enter the first number:");
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        System.out.println("Enter the second number:");
+        int num2 = sc.nextInt();
+        int ebob = findEbob(num1, num2);
+        int ekob = findEkob(num1, num2);
+        System.out.println("Ebob: " + ebob);
+        System.out.println("Ekob: " + ekob);
+        sc.close();
+    }
+
+    public static int findEbob(int num1, int num2) {
+        while (num2 != 0) {
+            int temp = num2;
+            num2 = num1 % num2;
+            num1 = temp;
+        }
+        return num1;
+    }
+
+    public static int findEkob(int num1, int num2) {
+        return (num1 * num2) / findEbob(num1, num2);
+    }
+}
