@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Lesson5Task2 {
+    public static void main(String[] args) {
+        System.out.println("enter first num");
+        Scanner sc = new Scanner(System.in);
+        int num1 = sc.nextInt();
+        System.out.println("enter second num");
+        int num2 = sc.nextInt();
+        sc.close();
+        int i=num1;
+        for(;i<=num2;i++){
+            double sqrt=Math.sqrt(i);
+            if(sqrt==(int)num1){
+                System.out.println("√" + i + " = " + (int) sqrt);
+
+            }
+        }
+    }
+}
