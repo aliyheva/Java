@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Lesson5Task1 {
+    public static void main(String[] args) {
+        System.out.println("Enter first number" + "");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        System.out.println("Enter second number" + "");
+        int b = sc.nextInt();
+        int i = a;
+        for (; i <= b; i++) {
+            System.out.println((int) Math.pow(i, 3));
+        }
+    }
+}
