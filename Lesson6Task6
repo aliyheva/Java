@@ -1,0 +1,20 @@
+public class Lesson6Task6 {
+    public static void main(String[] args) {
+        int[] arr={12,89,67,43,90};
+        int max=arr[0];
+
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>max){
+                max=arr[i];
+            }
+        }
+      int  remain=100-max;
+        for(int i=0;i<arr.length;i++){
+            arr[i]=arr[i]+remain;
+
+        }
+    for(int num: arr){
+        System.out.print(num+" ");
+    }
+    }
+}
