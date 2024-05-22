@@ -1,0 +1,12 @@
+public class Lesson7Task1 {
+        public static void main(String[] args) {
+            String sen1="Hello World";
+            String sen2="Hi World";
+            int len1=sen1.length();
+            int len2=sen2.length();
+            if(len1>len2){
+                System.out.println(sen1);
+            }
+
+        }
+}
