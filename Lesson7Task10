@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class Lesson7Task10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter sen: ");
+        String sen = sc.nextLine();
+        int k=sen.charAt(0);
+        if(k=='a'||k=='e'||k=='i'||k=='o'||k=='ı'||k=='ə'||k=='ü'||k=='ö'||k=='u'){
+            System.out.println("baslamir");
+        }
+        else{
+            System.out.println("baslayir");
+        }
+    }
+}
