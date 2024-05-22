@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Lesson7Task7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter sentence: ");
+        String sen = sc.nextLine();
+        if(sen.length()>1){
+            char k=sen.charAt(0);
+            char x=sen.charAt(sen.length()-1);
+            String news=x+sen.substring(1,sen.length()-1)+k;
+            System.out.println(news);
+        }
+    }
+}
