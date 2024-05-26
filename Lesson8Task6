@@ -1,0 +1,21 @@
+public class Lesson8Task6 {
+    public static void main(String[] args) {
+        String[] words = {"alma", "namaz", "ananas"};
+        for (String word : words) {
+            String result = method6(word);
+            if (result != null) {
+                System.out.println(result);
+            }
+        }
+    }
+
+    public static String method6(String str) {
+        int l = str.length();
+        char ch = str.charAt(0);
+        char ch1 = str.charAt(l - 1);
+        if (Character.toLowerCase(ch) == Character.toLowerCase(ch1)) {
+            return str;
+        }
+        return null;
+    }
+}
