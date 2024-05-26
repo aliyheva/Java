@@ -1,0 +1,11 @@
+public class Lesson8Task1 {
+    public static void main (String[] args ){
+        String str1="Hello World";
+        String str2="hi World";
+        int len1=str1.length();
+        int len2=str2.length();
+        if(len1>len2){
+            System.out.println(str1);
+        }
+    }
+}
