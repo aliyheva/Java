@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Lesson8Task3 {
+    public static double sum(double[] numbers) {
+        double sum = 0;
+        for (double num : numbers) {
+            sum += num;
+        }
+        return sum;
+    }
+
+    public static void main(String[] args) {
+              Scanner sc = new Scanner(System.in);
+              System.out.println("Enter length: ");
+              int length = sc.nextInt();
+              double[] numbers = new double[length];
+              System.out.println("Enter numbers: ");
+              for(int i = 0; i < numbers.length; i++){
+                  numbers[i] = sc.nextDouble();
+              }
+double result=sum(numbers);
+        System.out.println("result"+ result);
+    }
+}
