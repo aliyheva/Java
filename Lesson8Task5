@@ -1,1 +1,31 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+public class TaskFromJavaLesson {
+    public static void main(String[] args) {
+        String[] Array={"samovar","like","comment","linner","ok"};
+        String[] vowelWords=vowelWordsInArray(Array);
+        System.out.println(Arrays.toString(vowelWords));
+    }
+    static String[] vowelWordsInArray(String[] array) {
+        ArrayList<String> vowels=new ArrayList<String>();
+        for (String word : array) {
+            for (int i = 0; i < word.length() - 1; i++) {
+                char k = word.charAt(i);
+                char z = word.charAt(i + 1);
+                if (k == z) {
+                    vowels.add(word);
+                    if (k == 'a' || k == 'e' || k == 'i' || k == 'o' || k == 'ı' || k == 'ə' || k == 'ü' || k == 'ö' || k == 'u') {
+                        if (z == 'a' || z == 'e' || z == 'i' || z == 'o' || z == 'ı' || z == 'ə' || z == 'ü' || z == 'ö' || z == 'u') {
+                            if (k == z) {
+                                vowels.add(word);
 
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+        return vowels.toArray(new String[vowels.size()]);
+    }
+}
